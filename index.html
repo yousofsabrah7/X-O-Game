@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Alertify js -->
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+</head>
+
+<body>
+    <div id="all-content">
+        <div id="main-content">
+            <div id="header-and-board-wrapper">
+                <!-- top header -->
+                <header>
+                    <h2 id="instruction">
+                        x-turn
+                    </h2>
+                </header>
+                <!-- top header -->
+                <!-- board -->
+                <div id="grid-container">
+                    <!-- row one -->
+                    <div class="square" value="1" style="border-top:none; border-left:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="2" style="border-top:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="3" style="border-top:none; border-right:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <!-- row two -->
+                    <div class="square" value="4" style="border-left:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="5" style="">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="6" style=" border-right:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <!-- row three -->
+                    <div class="square" value="7" style="border-bottom:none; border-left:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="8" style="border-bottom:none; ">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                    <div class="square" value="9" style="border-bottom:none; border-right:none;">
+                        <h2 class="square-content">
+
+                        </h2>
+                    </div>
+                </div>
+                <!-- board -->
+                <!-- footer -->
+                <footer>
+                    <button class="action-btn" id="reset-btn">
+                        reset
+                    </button>
+                </footer>
+                <!-- footer -->
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

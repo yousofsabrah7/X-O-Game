@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf6f0;
+    margin: 0;
+    font-family: "Shantell Sans", cursive;
+}
+
+button {
+    font-family: "Shantell Sans", cursive;
+}
+
+#all-content {
+    height: 90vh;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#header-and-board-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:528px){
+    #header-and-board-wrapper {
+    width: 100%;
+    padding: 30px;
+}
+#main-content {
+    width: 100%;
+}
+}
+@media (min-width:529px) and (max-width:866px){
+    #header-and-board-wrapper {
+    width: 80%;
+    padding: 30px;
+}
+#main-content {
+    width: 80%;
+}
+}
+@media (min-width:867px) and (max-width:1050){
+    #header-and-board-wrapper {
+    width: 70%;
+    padding: 30px;
+}
+#main-content {
+    width: 70%;
+}
+}
+header {
+    width: 100%;
+    height: 10%;
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #ffb997;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#grid-container {
+    background-color: #f4a261;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: repeat(3, calc(100%/3));
+    border: #e9c46a solid 10px;
+    border-radius: 30px;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+}
+
+.square {
+    border: #fdf6f0 solid 2px;
+    background-color: #ffe5d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 2rem;
+    color: #3d3d3d;
+}
+
+.square:hover {
+    background-color: #e76f51;
+}
+
+.action-btn {
+    font-size: 30px;
+    padding: 7px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color: #2a9d8f;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.action-btn:hover {
+    color: #21867a;
+    background-color: white;
+}
