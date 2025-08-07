@@ -37,6 +37,7 @@ for (const item of gridItems) {
                 var winner = currentTurn === "x" ? "x" : "o";
                 gameIsFinished = true;
                 alertify.alert(`${winner} won`);
+                return;
             }
 
 
